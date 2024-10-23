@@ -46,3 +46,7 @@ class BasePage:
     @allure.step('Переключиться на новое окно')
     def switch_to_next_tab(self):
         self.driver.switch_to.window(self.driver.window_handles[-1])
+
+    @allure.step('Определить текущий URL')
+    def get_current_url(self):
+        return self.driver.current_url
