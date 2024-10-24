@@ -46,3 +46,8 @@ class MainPage(BasePage):
     @allure.step('Сравниваем current_url с base_url')
     def current_url_is_base_url(self):
         return self.get_current_url() == DataForTests.BASE_URL
+
+    @allure.step('Принимаем куки')
+    def coockie_clicker(self):
+        return self.click_to_element(MainPageLocators.BUTTON_COOCKIE)
+        
