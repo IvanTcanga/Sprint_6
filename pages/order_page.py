@@ -51,3 +51,7 @@ class OrderPage(BasePage):
         self.click_to_element(OrderPageLocators.BUTTON_ORDER)
         self.find_element_with_wait(OrderPageLocators.BUTTON_CONFIRM)
         self.click_to_element(OrderPageLocators.BUTTON_CONFIRM)
+
+    @allure.step('Принимаем куки')
+    def coockie_clicker(self):
+        return self.click_to_element(MainPageLocators.CONFIRM_COOCKIE)
