@@ -14,9 +14,9 @@ class TestOrderPageOrder:
                                                    (MainPageLocators.ORDER_BUTTON_MAIN, DataForTests.test_user_2)])
     def test_order_all_fields_success(self, driver, button, test_user):
         order_page = OrderPage(driver)
+        order_page.coockie_clicker()
         order_page.scroll_to_element(button)
         order_page.find_element_with_wait(button)
-        order_page.click_to_element(button)
         order_page.data_entry_first_form(test_user)
         order_page.data_entry_second_form(test_user)
         assert order_page.check_status_order_displayed()
