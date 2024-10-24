@@ -15,3 +15,5 @@ class MainPageLocators:
     # лого в шапке
     LOGO_SCOOTER = (By.XPATH, '//a[@href="/" and contains(@class, "Header_LogoScooter")]')
     LOGO_YANDEX = (By.XPATH, '//a[@href="//yandex.ru" and contains(@class, "Header_LogoYandex")]')
+
+    BUTTON_COOCKIE = (By.XPATH, '//button[ text()="да все привыкли" ]')
