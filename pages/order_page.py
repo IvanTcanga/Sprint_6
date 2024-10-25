@@ -54,4 +54,4 @@ class OrderPage(BasePage):
 
     @allure.step('Принимаем куки')
     def coockie_clicker(self):
-        return self.click_to_element(MainPageLocators.CONFIRM_COOCKIE)
+        return self.click_to_element(OrderPageLocators.CONFIRM_COOCKIE)
